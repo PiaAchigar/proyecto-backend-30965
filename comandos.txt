@@ -1,0 +1,12 @@
+/*  COMANDOS  */
+
+sudo systemctl start nginx
+
+pm2 start main.js -- --port=8080 --mode=fork
+pm2 start main.js -- --port=8081 --mode=cluster
+
+pm2 start main.js -- --port=8080 --mode=fork
+pm2 start main.js -- --port=8082 --mode=cluster
+pm2 start main.js -- --port=8083 --mode=cluster
+pm2 start main.js -- --port=8084 --mode=cluster
+pm2 start main.js -- --port=8085 --mode=cluster

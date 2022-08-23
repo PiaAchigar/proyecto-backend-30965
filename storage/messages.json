@@ -1,0 +1,29 @@
+{
+    "id": 1,
+    "messages": [
+      {
+        "text": "hola",
+        "author": {
+          "id": "pia@pia.com",
+          "name": "pia",
+          "lastname": "achigar",
+          "age": "30",
+          "alias": "piaAchi",
+          "avatar": "url"
+        },
+        "time": "16/8/2022 15:25:45"
+      },
+      {
+        "text": "otro mje",
+        "author": {
+          "id": "pia@pia.com",
+          "name": "pia",
+          "lastname": "achi",
+          "age": "22",
+          "alias": "pipi",
+          "avatar": "url"
+        },
+        "time": "16/8/2022 17:4:51"
+      }
+    ]
+  }
