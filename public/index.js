@@ -20,6 +20,10 @@ submitBtn.addEventListener("click", (e) => {
 
   socket.emit("addProduct", newProduct);
 });
+// socket.on("success", (data) => {
+//   console.log(data.author);
+//   document.getElementById("inyectName").innerHTML = `Hola ${data.author}`;
+// });
 
 socket.on("newProduct", (data) => {
   tableBody.innerHTML += `
@@ -84,6 +88,7 @@ logoutBtn.addEventListener("click", (e) => {
 });
 
 socket.on("success", (data) => {
+  //document.getElementById("inyectName").innerHTML = `Hola ${data.author}`;
   loginInputGroup.style.display = "none";
   chatInputGroup.style.display = "flex";
   messages.style.display = "block";
