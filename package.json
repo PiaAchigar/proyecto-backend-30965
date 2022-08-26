@@ -1,11 +1,11 @@
 {
-  "name": "desafio-clase30-proxy-nginx",
+  "name": "proyecto-pia",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "scripts": {
     "test": "node main.js",
-    "start": "node main.js",
+    "start": "node server.js",
     "devStart":"nodemon main.js --ignore messages.json"
   },
   "keywords": [],
