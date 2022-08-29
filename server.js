@@ -103,7 +103,7 @@ const server = (args) => {
   app.post(
     "/login",
     passport.authenticate("login", {
-      successRedirect: "/index",
+      successRedirect: "/",
       failureRedirect: "/login",
       failureFlash: true,
     })
@@ -131,7 +131,11 @@ const server = (args) => {
 
   app.get("/", isAuthenticated, async (req, res) => {
     const parsedData = await replace(req.user.email);
-    return res.send(parsedData);
+    //return res.send(parsedData);
+    const randomProducts = createRandomProducts(5);
+    return res.render("partials/products-table", {
+      productos: randomProducts,
+    });
   });
 
   app.get("/logout", isAuthenticated, (req, res, next) => {
