@@ -103,7 +103,7 @@ const server = (args) => {
   app.post(
     "/login",
     passport.authenticate("login", {
-      successRedirect: "/",
+      successRedirect: "/index",
       failureRedirect: "/login",
       failureFlash: true,
     })
